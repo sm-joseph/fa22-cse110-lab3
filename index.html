@@ -10,62 +10,107 @@
 
     <header>
       <h1> Vis 1 Lecture 1 Meeting Notes - <i>Drawing Portraits</i> </h1>
-      <nav>..navigation menu links here…</nav>
+      <p>Some background for the class:</p>
+      <nav class="wiki links">
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Art#History">History of Art</a> on Wikipedia</li>
+          <li><a href="https://en.wikipedia.org/wiki/Portrait">Portraits</a> on Wikipedia</li>
+        </ul>
+      </nav>
     </header>
 
     <div id=“sections”>
       <section>
-
         <img src="/misc/face.png" alt="Actor drawing" width="400" height="400">
-
         <h2> What to pay attention to when drawing a portrait </h2>
           <p> There are a few important items to consider when trying to make a portrait realistic. You will want to spend a <b>lot</b> of time on the following: </p>
+          
           <ul>
             <li>Face shape</li>
             <li>Facial Proportions</li>
             <li>Shading/light source</li>
           </ul> 
+
           <p> 
             If you don't put a lot of care into the above 3 items, your drawing can easily start to look strange. 
             <strong> Compare with your reference photo often </strong> to make sure you're being accurate. 
-          </p>
-
- 
-          
+          </p>   
       </section>
+
       <section>
         <h3> Basic Steps </h3>
-          <p> You can follow these steps in order to complete a portrait: </p>
-          <ol>
-            <li> Sketch face shape -- <em>Use <span> light pencils</span> so you can correct mistakes!</em></li>
-            <li> Sketch facial features </li>
-            <li> Compare with reference to make sure your sketch is accurate before continuing</li>
-            <li> Using darker pencils, add shading to the facial features</li>
-            <li> Shade the skin and hair</li>
-            <li> Go over drawing with blending tool and/or eraser to make adjustments</li>
-          </ol> 
+        <p> You can follow these steps in order to complete a portrait: </p>
+        <ol>
+          <li> Sketch face shape -- <em>Use <span> light pencils</span> so you can correct mistakes!</em></li>
+          <li> Sketch facial features </li>
+          <li> Compare with reference to make sure your sketch is accurate before continuing</li>
+          <li> Using darker pencils, add shading to the facial features</li>
+          <li> Shade the skin and hair</li>
+          <li> Go over drawing with blending tool and/or eraser to make adjustments</li>
+        </ol> 
 
-          <details>
-            <summary>A Helpful Link!</summary>
-            <p> This <a href="https://www.youtube.com/watch?v=y-hFyom8P1U"> tutorial</a> should address some common errors people make. </p>
-            
-          </details> 
+        <details>
+          <summary>A Helpful Link!</summary>
+          <p> This <a href="https://www.youtube.com/watch?v=y-hFyom8P1U"> tutorial</a> should address some common errors people make. </p>
+        </details> 
           
-          <p> <br> Below is an embedded video that shows some of the above steps: </p>
-            <video width="750" height="500" controls>
-              <source src="misc/lab2examplevideo.mp4" type="video/mp4">
-            </video> 
+        <p> <br> Below is an embedded video that shows some of the above steps: </p>
+          <video width="750" height="500" controls>
+            <source src="misc/lab2examplevideo.mp4" type="video/mp4">
+          </video> 
 
-            <p> <br> And here is the audio from the video: </p>
-            <p> (The original audio/video can be found at this <a href="https://www.youtube.com/shorts/Bw0lI7Z1HCQ"> link.</a> </p>
-            <audio controls autoplay muted>
-              <source src="misc/lab2exampleaudio.mp3" type="audio/mpeg">
-            </audio>
-
-        
+        <p> <br> And here is the audio from the video: </p>
+        <p> (The original audio/video can be found at this <a href="https://www.youtube.com/shorts/Bw0lI7Z1HCQ"> link.</a> </p>
+        <audio controls autoplay muted>
+          <source src="misc/lab2exampleaudio.mp3" type="audio/mpeg">
+        </audio>  
       </section>
     </div>
 
-  <footer> <br> Thanks for reading my notes! </footer>
+    <h3><br>Below is the html form requirement:</h3>
+    <form>
+      <fieldset>
+        <p>Enter your name in this input box: <input type="text"> <br> </p> 
+        <p> Enter the date: <input type="date"> <br> </p>
+        <p><input type="checkbox"> &lt Check the checkbox! <br> </p>
+      </fieldset> 
+      
+      <br>
+
+      <fieldset>
+        <p>I'll be honest I have no clue why this is called a radio... 
+          <br> <input type="radio" name="rad"> Neither do I... 
+          <br> <input type="radio" name="rad" > Me neither... 
+        </p>
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <p>Type your opinion on my VIS1 lecture meeting minutes:</p>
+        <textarea rows="5" cols="50"> </textarea>
+
+        <p>What's your favorite type of art?</p>
+        <input list="art_types">
+        <datalist id="art_types">
+            <option value="Drawing">
+            <option value="Coloring">
+            <option value="Painting">
+            <option value="Something else...">
+        </datalist>
+
+        <p>Were these notes helpful?</p>
+        <select>
+          <option>Absolutely!</option>
+          <option>Yes</option>
+          <option>Meh...</option>
+          <option>No :(</option>
+        </select>
+      </fieldset>
+
+      <br><button type="button">Click here to "submit" your form!</button> 
+    </form>
+
+    <footer> <br> Thanks for reading my notes! </footer>
   </body>
 </html>
