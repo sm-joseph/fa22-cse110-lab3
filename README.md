@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3
 
-My Lab2 link: https://sm-joseph.github.io/CSE110_Lab2/
+My Lab 3 link: https://sm-joseph.github.io/fa22-cse110-lab3
