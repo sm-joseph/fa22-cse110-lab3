@@ -1,9 +1,136 @@
 /* This is a CSS comment for the linked html file. */
-body {
-    background-color: lightgrey;
-    color: rgb(9, 9, 107);
-  }
 
+/* import font for later */
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+
+/* Make all body text dark blue */
+body {
+    color: rgb(9, 9, 107);
+}
+
+/* Set default background color*/
+* {
+    background-color: lightgrey;
+}
+
+/* Make links blue by default */
 a[href] {
-    color: red;
+    color: blue;
+    display: inline;
+}
+
+/* Hovering links makes them green (if possible on device) */
+@media (hover: hover) {
+    /* if hovering is possible on device */
+    a:hover {
+      color: green;
+    }
+}
+
+/* Active links are yellow */
+a[href]:active {
+    color: yellow;
+}
+
+/* Large title on top of page */
+body h1 {
+    text-decoration: underline;
+    
+    border-style: dotted;
+    border-color: black;
+    border-width: .2em;
+    border-radius: 3rem;
+    
+    text-align: center;
+
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+
+    position: static;
+}
+
+/* the p that comes right after the large header at the top*/
+h1 + p {
+    font-size: 2pc;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    
+    border: 3px solid darkslateblue;
+    
+    padding: 5px;
+
+    text-align: center;
+}
+
+/* Navlinks */
+.navlinks {
+    font-size: 6mm;
+    margin: auto;
+}
+
+/* All navlinks after the first h2 are slightly smaller */
+h2 ~ .navlinks {
+    font-size: 5mm;
+    margin: auto;
+}
+
+/* Put border and padding around the large image */
+.img1 {
+    border: 5px solid black;
+    border-radius: 5px;
+    margin: 25px 25px 25px 25px;
+    padding: 5px 5px 5px 5px;
+    height: 35vw;
+    width: 35vw;
+}
+
+/* Hide some rickrolls in the html to use display:none */
+.secretlink, .secretlink2 {
+    display: none;
+}
+
+/*Use flex grid for the "portrait steps" thingy */
+#portraitsteps {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 101vw;
+    row-gap: 7px;
+}
+
+.htmlformintro {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Use grid for the html form */
+.gridcontainer {
+    display: grid;
+    row-gap: 15px;
+    column-gap: 100vw;
+    justify-items: center;
+
+    border: 2px dashed black;
+    border-radius: 5px;
+    margin: 25px 25px 25px 25px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+/* Use google font for the footer */
+footer > .thankyou {
+    position: relative;
+    top: 15mm;
+    bottom: 15mm;
+    margin: 25px 25px 25px 25px;
+    font-family: 'Pacifico';
+    font-size: 2pc;
+    text-align: center;
+
+    
 }
