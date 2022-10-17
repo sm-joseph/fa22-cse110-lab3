@@ -1,3 +1,9 @@
-title1 {
-    color: rgb(5, 5, 64);
+/* This is a CSS comment for the linked html file. */
+body {
+    background-color: lightgrey;
+    color: rgb(9, 9, 107);
+  }
+
+a[href] {
+    color: red;
 }
